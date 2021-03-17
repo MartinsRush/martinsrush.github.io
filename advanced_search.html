@@ -1,0 +1,29 @@
+<!-- https://google.com/advanced_search -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div style="display: block;" id="home">
+            <a class="link" href="index.html">Google Search</a>
+        </div>
+        
+        <div style="display: block;" id="header_adv">Advanced Search</div>
+
+        <div style="display: block;" id="body_adv">
+            <div style="font-size: 16px; color: #333333; margin-bottom: 18px;">Find pages with...</div>
+            
+            <form autocomplete="off" action="https://google.com/search">
+                <div>all these words: <input type="text" name="as_q"></div>
+                <div>this exact word or phrase: <input type="text" name="as_epq"></div>
+                <div>any these words: <input type="text" name="as_oq"></div>
+                <div>none of these words: <input type="text" name="as_eq"></div>
+                <input type="submit" value="Advanced Search">
+            </form>
+
+        </div>
+    </body>
+</html>

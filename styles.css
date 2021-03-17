@@ -1,0 +1,211 @@
+body {
+    font-family: 'Arial', 'Sans-serif';
+    font-size: 13px;
+}
+
+#guias, #home {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 21px 23px 0; /* Top Left/Right Bottom */
+}
+
+.link {
+    margin: 0 8px 0; /* Top Left/Right Bottom */
+}
+
+a {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+a:link {
+    text-decoration: none;
+}
+  
+a:visited {
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+#header_adv {
+    color: #d93025;
+    font-size: 20px;
+    padding: 17px 0 25px 38px;
+    border-bottom: #EBEBEB 2px solid;
+}
+
+#body_adv {
+    color: #222222;
+
+    padding: 35px 0 0 38px;
+}
+
+#body_adv div {
+    margin-top: 13px;
+}
+
+#body_adv input[type=submit] {
+    margin-top: 23px;
+    border: 1px solid #3079ED;
+    background-color: #4B8EFA;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 11px;
+    padding: 8px 12px 8px 13px;
+    border-radius: 2px;
+}
+                                        /* FALTA BLOQUEAR A QUEBRA DE LINHA PARA JANELA PEQUENA E 
+                                        RESIZING DA BARRA, add mais tarde com JS */
+@media (min-width: 829px) {
+    #body_adv input[type=text] {
+        width: 564px;
+    }
+}
+
+@media (max-width: 828px) {
+    #body_adv input[type=text] {
+        margin-right: 48px;
+        width: auto;                
+    }
+}
+
+#body_adv input[type=text] {
+    height: 25px;
+    border: solid 1px #D9D9D9;
+    border-top: solid 1px #C0C0C0;
+    padding: 0px 8px 0px 7px;
+}
+
+#body_adv input[type=text]:focus {
+    outline: none;
+    border: #4D90FE 1px solid;
+    box-shadow: inset 0px 1px 2px #CACACA;
+}
+
+input[name=as_q] {
+    transform: translateX(59px);
+}
+
+input[name=as_epq] {
+    transform: translateX(1px);
+}
+
+input[name=as_oq] {
+    transform: translateX(52px);
+}
+
+input[name=as_eq] {
+    transform: translateX(30px);
+}
+
+#logo_wrapper {
+    position: relative;
+}
+
+#logo {
+    margin: 60px auto 0px;
+}
+
+#logo_img {
+    margin: 156px auto 0px;
+}
+
+#img_text {                 /* Posiciona o 'images' abaixo da logo */
+    font-size: 16px;
+    color: #4285f4;
+    position: absolute;
+    top: 75px;
+    left: 71px;
+    transform: translateX(+50vw);
+}
+
+#formulario {
+    display: block;
+    text-align: center;
+}
+
+#barra {
+    margin: 26px 0 29px;
+}
+
+#barra_img {
+    margin: 21px 0 0;
+}
+
+#barra, #barra_img {
+    background-image: url('search_icon.jpg');
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: 17px 14px;
+
+    padding: 0px 25px 0px 48px;
+    font-size: 16px;
+
+    /*width: 509px;*/
+    height: 44px;
+    border: 1px solid #E1E1E1;
+    border-radius: 23px;
+}
+
+#icon_submit {      /* Posiciona o a imagem da lupa no canto direito */
+    transform: translateX(-67px) translateY(17px);      /* Se ativado no HTML, deixa a barra off-center */
+    padding: 13px 20px 14px;
+}
+
+button:focus {      /* Remove a borda ao clicar no botão de pesquisa*/
+    outline: none;
+    box-shadow: none;
+}
+
+@media (min-width: 639px) {
+    #barra {
+        width: 509px;
+    }
+    #barra_img {
+        width: 461px;
+    }
+}
+
+@media (max-width: 639px) {
+    #barra {
+        width: 81%;
+    }
+
+    #barra_img {
+        width: 330px;
+    }
+}
+
+#barra:focus, #barra_img:focus {
+    outline: none;
+}
+
+#barra:hover, #barra_img:hover {
+    box-shadow: 1px 1px 4px 1px #E1E1E1;
+}
+
+#body_index input[type=submit] {        /* Botão do advanced search */
+    font-size: 14px;
+    color: #202124;
+    background-color: #F8F9FB;
+    border: none;
+    cursor: pointer;
+    padding: 10px 17px 10px 17px;
+    border-radius: 4px;
+}
+
+#body_index input[type=submit]:hover {
+    background-color: #F8F9FA;
+    border-style: solid;
+    border-color: #DADCE0;
+    border-width: 1px;
+    box-shadow: 0 1px #E8E8E8;
+}
+
+#body_index input[value="Google Search"] {
+    margin: 0px 8px 0px 0px;        /* Margem entre os botões de pesquisa */
+}
