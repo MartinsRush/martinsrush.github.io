@@ -188,6 +188,10 @@ button:focus {      /* Remove a borda ao clicar no botão de pesquisa*/
     box-shadow: 1px 1px 4px 1px #E1E1E1;
 }
 
+input[type=submit]:focus {
+    outline: none;
+}
+
 #body_index input[type=submit] {        /* Botão do advanced search */
     font-size: 14px;
     color: #202124;
