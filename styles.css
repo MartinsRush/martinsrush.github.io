@@ -31,8 +31,7 @@ a:hover {
 text-decoration: underline;
 }
 
-#header_adv {
-    display: block !important;
+#header_asearch {
     color: #d93025;
     font-size: 20px;
     padding: 17px 0 25px 38px;
