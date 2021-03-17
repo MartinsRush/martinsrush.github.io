@@ -32,6 +32,7 @@ text-decoration: underline;
 }
 
 #header_adv {
+    display: block !important;
     color: #d93025;
     font-size: 20px;
     padding: 17px 0 25px 38px;
